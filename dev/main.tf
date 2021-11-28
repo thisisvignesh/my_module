@@ -17,4 +17,17 @@ module "vpc" {
   pri_rt_cidr                     = var.pri_rt_cidr
   ngw                             = var.ngw
   nat_eip                         = var.nat_eip
+  sg_name                         = var.sg_name
+  sg_from_port_no                 = var.sg_from_port_no
+  sg_to_port_no                   = var.sg_to_port_no
+  sg_in_cidr                      = var.sg_in_cidr
+  sg_out_cidr                     = var.sg_out_cidr
+  sg_protocol                     = var.sg_protocol
+  ins_name                        = var.ins_name
+  instance_type                   = var.instance_type
+  key_name                        = var.key_name
+  ins_count                       = var.ins_count
+  ami_id                          = var.ami_id
+
+  associate_public_ip_address = var.associate_public_ip_address
 }

@@ -15,3 +15,16 @@ variable "pri_rt_cidr" {}
 variable "pri_rt" {}
 variable "ngw" {}
 variable "nat_eip" {}
+variable "sg_name" {}
+variable "sg_from_port_no" {}
+variable "sg_to_port_no" {}
+variable "sg_in_cidr" {}
+variable "sg_out_cidr" {}
+variable "sg_protocol" {}
+variable "key_name" {}
+variable "ami_id" {}
+variable "instance_type" {}
+variable "ins_name" {}
+
+variable "ins_count" {}
+variable "associate_public_ip_address" {}
