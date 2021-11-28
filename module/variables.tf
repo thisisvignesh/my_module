@@ -1,0 +1,17 @@
+variable "vpc_cidr" {}
+variable "vpc" {}
+variable "pub_subnet_cidr" {}
+variable "pub_subnet_zone" {}
+variable "pub_subnet" {}
+variable "map_public_ip_on_launch" {}
+variable "pri_subnet_cidr" {}
+variable "pri_subnet_zone" {}
+variable "pri_subnet" {}
+variable "map_public_ip_on_launch_private" {}
+variable "igw" {}
+variable "pub_rt_cidr" {}
+variable "pub_rt" {}
+variable "pri_rt_cidr" {}
+variable "pri_rt" {}
+variable "ngw" {}
+variable "nat_eip" {}
