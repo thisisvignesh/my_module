@@ -1,0 +1,20 @@
+module "vpc" {
+  source                          = "../module"
+  vpc                             = var.vpc
+  vpc_cidr                        = var.vpc_cidr
+  pub_subnet                      = var.pub_subnet
+  pub_subnet_cidr                 = var.pub_subnet_cidr
+  pub_subnet_zone                 = var.pub_subnet_zone
+  map_public_ip_on_launch         = var.map_public_ip_on_launch
+  pri_subnet                      = var.pri_subnet
+  pri_subnet_cidr                 = var.pri_subnet_cidr
+  pri_subnet_zone                 = var.pri_subnet_zone
+  map_public_ip_on_launch_private = var.map_public_ip_on_launch_private
+  igw                             = var.igw
+  pub_rt                          = var.pub_rt
+  pub_rt_cidr                     = var.pub_rt_cidr
+  pri_rt                          = var.pri_rt
+  pri_rt_cidr                     = var.pri_rt_cidr
+  ngw                             = var.ngw
+  nat_eip                         = var.nat_eip
+}
