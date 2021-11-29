@@ -36,9 +36,10 @@ sg_out_cidr     = ["0.0.0.0/0"]
 sg_protocol     = "ssh"
 
 //INSTANCE
-ami_id                      = "ami-0108d6a82a783b352"
-ins_count                   = "2"
-instance_type               = "t2.micro"
+ami_id        = "ami-0108d6a82a783b352"
+ins_count     = "2"
+instance_type = "t2.micro"
+
 ins_name                    = "prod"
 associate_public_ip_address = "true"
 key_name                    = "mumbai acc2"

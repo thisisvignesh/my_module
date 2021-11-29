@@ -7,6 +7,9 @@ resource "aws_vpc" "vpc" {
     Name = var.vpc
   }
 }
+output "vpc_id" {
+  value = ""
+}
 //public_subnet
 resource "aws_subnet" "subnet_public" {
 
@@ -22,6 +25,10 @@ resource "aws_subnet" "subnet_public" {
     Name = var.pub_subnet
   }
 }
+output "subnet_id" {
+  value = ""
+}
+
 //private_subnet
 resource "aws_subnet" "subnet_private" {
 
@@ -37,6 +44,7 @@ resource "aws_subnet" "subnet_private" {
     Name = var.pri_subnet
   }
 }
+
 //IGW
 resource "aws_internet_gateway" "igw" {
 
